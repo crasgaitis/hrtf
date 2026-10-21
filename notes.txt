@@ -1,0 +1,10 @@
+allimps variable contains raw HRIR (impulse response) information derived from the raw recordings.
+Variables with _noitd is ITD-removed version of the impulse responses.
+Variables with _nospec is spectral-flatted version of the impulse responses.
+Variables with _ILDequal is ILD-equalized version of the impulse response.
+Variables with _percep is how the mouse should perceive the sound. This applies a setup-specific filter to mimic the sound structure near the ear drums.
+Variables with _present is what should be used for stimulation. When this sound is played through speaker, the speaker's own filter makes it closer to _percep version.
+Variables with _ILDcorrected adjust minor recording condition differences between the left and right ears. This variable should be used to generate the stimuli.
+
+My understanding is _percep is essentially the raw data (what eardrum should receive if you undo speaker/mic).
+_present is with their setup specific filters.
